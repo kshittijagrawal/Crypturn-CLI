@@ -54,7 +54,7 @@ def convert_crypto_to_fiat(cvalue, ctype, ftype):
 def validity_of_currencytype(ctype, ftype):
     """This function checks if the user input of Cryptocurrency type or Fiat Money type are truly the latter.
     Returns 1 if found an error in the input, else returns 0."""
-    available_cryptocurrencies = ['BTC', 'BSV', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX', 'USDC', 'BAT']
+    available_cryptocurrencies = ['BTC', 'BSV', 'ETH', 'ETC', 'BCH', 'LTC', 'ZEC', 'ZRX', 'USDC', 'BAT', 'XLM']
     if ctype not in available_cryptocurrencies:
         return 1, f"\n{ctype} is not a Cryptocurrency. Try Again!\n"
     elif ftype in available_cryptocurrencies:
@@ -123,7 +123,8 @@ The possible Cryptocurrencies available for conversion are :
 \t ZEC  :  Zcash
 \t ZRX  :  Ox
 \t USDC :  US Dollar Coin
-\t BAT  :  Basic Attention Token\n\n
+\t BAT  :  Basic Attention Token
+\t XLM  :  Stellar\n\n
 Press (1)  :  To convert Cryptocurrency to Fiat Money.
 Press (2)  :  To convert Fiat Money to Cryptocurrency.
 Press (Q/q)  :  If you're wanting to Quit
