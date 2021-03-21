@@ -83,7 +83,7 @@ def main():
             result = convert_crypto_to_fiat(crypto_value, crypto_type.upper(), fiat_type.upper())
             if result is None: return
             elif result == 1: continue
-            print(f"{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}")
+            print(f"\n------------------------------------------\n{crypto_value} {crypto_type.upper()} in {fiat_type.upper()} is  -->  {result}\n------------------------------------------")
 
         elif user_inp == "2":
             fiat_type = input("\nEnter the Fiat Money Type  :  ")
@@ -100,7 +100,7 @@ def main():
             result = convert_fiat_to_crypto(fiat_value, fiat_type.upper(), crypto_type.upper())
             if result is None: return
             elif result == 1: continue
-            print(f"{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}")
+            print(f"\n------------------------------------------\n{fiat_value} {fiat_type.upper()} in {crypto_type.upper()} is  -->  {result}\n------------------------------------------")
         
         elif user_inp == "Q" or user_inp == "q": return
 
